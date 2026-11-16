@@ -12,3 +12,8 @@ def cadastrar_talhao(nome, area_ha, cultura):
 
 if __name__ == "__main__":
     print(cadastrar_talhao("Talhao 01", 12.5, "Soja"))
+
+# Alteracao solicitada pelo time de operacoes (versao 1.1)
+def listar_talhoes():
+    for t in talhoes:
+        print(t["nome"], "-", t["area_ha"], "ha -", t["cultura"])
